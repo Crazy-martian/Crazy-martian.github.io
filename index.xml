@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Crazymartian's Blog</title><link>https://crazy-martian.github.io/</link><description>Recent content on Crazymartian's Blog</description><generator>Hugo -- 0.147.9</generator><language>zh-cn</language><lastBuildDate>Tue, 24 Jun 2025 16:03:45 +0800</lastBuildDate><atom:link href="https://crazy-martian.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>抽代笔记1-域扩张与经典几何问题</title><link>https://crazy-martian.github.io/posts/1_fields_and_algebra/</link><pubDate>Tue, 24 Jun 2025 16:03:45 +0800</pubDate><guid>https://crazy-martian.github.io/posts/1_fields_and_algebra/</guid><description>&lt;hr>
 &lt;!-- raw HTML omitted -->
-&lt;p>$$test equations \dfrac{a}{b}$$&lt;/p>
 &lt;h3 id="定义11--域">定义1.1   域&lt;/h3>
 &lt;p>$K$ 是至少有 $2$ 个元素的集合。如果 $K$ 上定义了乘法 $\cdot$ 和加法 $+$，且满足：&lt;/p>
 &lt;ul>
