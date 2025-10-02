@@ -140,12 +140,26 @@
   <div class="post-content"><h2 id="105-乘积空间上的测度与积分-fubini-定理">10.5 乘积空间上的测度与积分 Fubini 定理<a hidden class="anchor" aria-hidden="true" href="#105-乘积空间上的测度与积分-fubini-定理">#</a></h2>
 <p>定义：给定两个度量测度空间 $(\R^p,M,\mu),(\R^q,N,\nu)$,<br>
 定义 $(\mu \otimes \nu)(E) = \inf{\sum\limits_{i\geq 1}{\mu(A_i)\nu(B_i)} | A_i \in M, B_i \in N, \bigcup\limits A_i \times B_i \supset E}$</p>
-<p>定理 10.5.2</p>
+<h5 id="非负可测函数的-tonelli-定理">非负可测函数的 Tonelli 定理<a hidden class="anchor" aria-hidden="true" href="#非负可测函数的-tonelli-定理">#</a></h5>
+<p>$f: X \times Y \to [0,\inf]$ 非负可测，那么 $$\int_X(\int_Y f(x,y) d\nu(y))d\mu(x)=\int_Y(\int_X f(x,y) d\mu(x))d\nu(y)=\int_{X\times Y} fd(\mu\times\nu)$$</p>
 <ul>
-<li></li>
-<li>$M\otimes N \subset (M\otimes N)*$ 且有<strong>等测包</strong>性质：</li>
-<li>$\forall E \subset \R^P \times \R^q, \ \exists H \in M \otimes N \ s.t. \ H \supset E, (\mu\otimes\nu)(H)=(\mu\otimes\nu)(E)$</li>
-<li>若 $E \in (M \otimes N)*$，且是 <strong>$\sigma-$有限的</strong>，即 $E = \bigcup\limits_{i=1}^\infin E_i, \ (\mu\otimes\nu)(E_i)&lt;\infin$，则</li>
+<li>条件只有一个：函数非负且可测。 不需要函数可积。</li>
+<li>结论非常强： 两个累次积分总是存在（尽管可能为 +∞），并且它们都等于在乘积空间上的积分。</li>
+</ul>
+<br/>
+<h5 id="可积函数的-fubini-定理">可积函数的 Fubini 定理<a hidden class="anchor" aria-hidden="true" href="#可积函数的-fubini-定理">#</a></h5>
+<p>$f:X\times Y \to \R or \mathbb{C}$ 是可积的，即 $\int_{X\times Y} |f|d(\mu\times\nu)&lt;\infin$，则</p>
+<ol>
+<li>对几乎所有的 $x\in X$，$g_x(y)=f(x,y)$ 在 $Y$ 上可积</li>
+<li>对几乎所有的 $y\in Y$, $h_y(x)=f(x,y)$ 在 $X$ 上可积</li>
+<li>$G(x)=\int_Y f(x,y)d\nu(y)$ 在 $X$ 上可积</li>
+<li>$H(y)=\int_X f(x,y)d\mu(x)$ 在 $Y$ 上可积</li>
+<li>最终结论： $$\int_X(\int_Y f(x,y) d\nu(y))d\mu(x)=\int_Y(\int_X f(x,y) d\mu(x))d\nu(y)=\int_{X\times Y} fd(\mu\times\nu)$$</li>
+</ol>
+<ul>
+<li>关键条件：∣f∣ 的积分必须是有限的。 这是使用这个定理的前提。</li>
+<li>如何验证这个前提？ 通常是利用上面的 Tonelli 定理。我们先计算 ∣f∣ 的累次积分，如果得到一个有限值，那么 Tonelli 定理保证了 f 是可积的。然后我们就可以放心地应用 Fubini 定理来计算 f 的积分了。</li>
+<li>这个定理告诉我们，只要函数“足够好”（即绝对值可积），那么交换积分顺序就是合法的，并且结果不变。</li>
 </ul>
 
 
